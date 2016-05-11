@@ -4,8 +4,8 @@ var router = express.Router();
 var request = require('request');
 var Base64 = require('js-base64').Base64;
 
-var API_KEY = process.env.PB_API_KEY || '0hMBssXxtibQGOV7GcLTLAYAK3PmyJEd';
-var SECRET = process.env.PB_SECRET || 'oMejtq6OkTViROhN';
+var API_KEY = process.env.PB_API_KEY;
+var SECRET = process.env.PB_SECRET;
 
 router.get('/getpitneybowes', (req, res) => {
   // var accessTokenUrl = 'https://github.com/login/oauth/access_token';
